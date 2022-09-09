@@ -95,7 +95,31 @@ export default function MechanicDetails({ onUpdateReview }){
               <li className="list-group-item badge text-bg-info" style={{color: "red"}}>Av. Rating: {(totalRating/review.length).toFixed(1)} / 5</li>
             </ul>
           </div>
-         
+          <div className="personal-dets">
+            <h5 className="card-title">Reviews</h5>
+            <div className="review" style={{width: 80+"%"}}  key={review.id}>
+              {review.map((review) => {
+                return (
+                    <div className="card-body" >
+      
+                      <h6 className="card-subtitle mb-2" style={{color: "blue"}}>{review.name}'s Review: </h6>
+                      <div className="rating-time">
+                        <p className="card-text">Rating: <span  style={{color: "red"}}>{review.rating}</span></p>
+                        <div className="vl"></div>
+                      </div>
+                      <p className="card-text"> <span > </span> {review.comment}</p>
+                      
+                      <div>
+                        
+                       
+                        <button className="button2"> <DeleteReview onDeleteReview={handleDeleteReview} id={review.id}/> </button>
+                      </div>
+                  
+                    </div>
+                )
+              })}
+            </div>
+            <AddReview onAddReview={handleAddReview} id={id}/>
 
           </div>
         </div>
