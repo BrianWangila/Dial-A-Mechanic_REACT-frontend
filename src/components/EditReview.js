@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 
 function EditMechanic({ id, onUpdateReview}){
- 
+  // const [mechDetails, setMechDetails] = useState(body)
+  const [comment, setComment] = useState("")
+  const [rating, setRating] = useState("")
 
   function handleFormSubmit(e){
     e.preventDefault()
@@ -11,6 +13,17 @@ function EditMechanic({ id, onUpdateReview}){
       rating: rating,
     }
 
+    fetch(`http://localhost:9292/reviews/${id}`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type":"application/json"
+      },
+      body: JSON.stringify(updateReview)
+    })
+    .then((resp) => resp.json())
+    .then((updatedReview) => onUpdateReview(updatedReview))
+    console.log(updateReview)
+  }
 
 
   return (
