@@ -1,7 +1,14 @@
 import React from "react";
 
-function DeleteReview(){
+function DeleteReview({onDeleteReview, id, mechId}){
 
+  function deleteReview(){
+    fetch(`http://localhost:9292/reviews/${id}`, {
+      method: "DELETE",
+      headers: {"Content-Type":"application/json"}
+    })
+    onDeleteReview(id)
+  }
 
 
   
