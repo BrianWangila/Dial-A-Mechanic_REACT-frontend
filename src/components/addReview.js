@@ -17,7 +17,16 @@ function AddReview({onAddReview, id}){
     }
 
 
- 
+    fetch(`http://localhost:9292/reviews`, {
+      method: "POST",
+      headers: {"Content-Type":"application/json"},
+      body: JSON.stringify(newReview)
+    })
+    .then((resp) => resp.json())
+    .then((data) => onAddReview(data))
+    console.log(newReview)
+   
+  }
 
   return (
     <div>
