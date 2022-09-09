@@ -111,6 +111,7 @@ export default function MechanicDetails({ onUpdateReview }){
                       <div className="rating-time">
                         <p className="card-text">Rating: <span  style={{color: "red"}}>{review.rating}</span></p>
                         <div className="vl"></div>
+                        <p className="card-text" >Posted at: <span style={{color: "red"}}>{(new Date(review.updated_at).toLocaleTimeString())}</span></p>
                       </div>
                       <p className="card-text"> <span > </span> {review.comment}</p>
                       
