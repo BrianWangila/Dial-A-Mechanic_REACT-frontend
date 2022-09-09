@@ -17,6 +17,11 @@ export default function MechanicsCard({id, body, onUpdateMechanic, category, nam
     .then(() => onHandleDelete(mechId))
   }
 
+  function handleUpdateMechanic(updatedMechanic){
+    setIsEditing(false);
+    onUpdateMechanic(updatedMechanic)
+  }
+
 
   return(
     <div className="center col-sm-6">
