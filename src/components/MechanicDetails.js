@@ -101,7 +101,12 @@ export default function MechanicDetails({ onUpdateReview }){
               {review.map((review) => {
                 return (
                     <div className="card-body" >
-      
+                      <hr style={{
+                        background: "blue",
+                        height: 0.5+"vh",
+                        color: "yellow",
+                        width: 20+"vw"
+                      }}/>
                       <h6 className="card-subtitle mb-2" style={{color: "blue"}}>{review.name}'s Review: </h6>
                       <div className="rating-time">
                         <p className="card-text">Rating: <span  style={{color: "red"}}>{review.rating}</span></p>
@@ -115,7 +120,12 @@ export default function MechanicDetails({ onUpdateReview }){
                        
                         <button className="button2"> <DeleteReview onDeleteReview={handleDeleteReview} id={review.id}/> </button>
                       </div>
-                  
+                      <hr style={{
+                        background: "blue",
+                        height: 0.5+"vh",
+                        color: "yellow",
+                        width: 20+"vw"
+                      }}/>
                     </div>
                 )
               })}
