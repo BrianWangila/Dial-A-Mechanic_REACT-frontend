@@ -3,7 +3,13 @@ import React, { useState } from "react";
 function EditMechanic({ id, onUpdateReview}){
  
 
+  function handleFormSubmit(e){
+    e.preventDefault()
 
+    const updateReview = {
+      comment: comment,
+      rating: rating,
+    }
 
 
 
