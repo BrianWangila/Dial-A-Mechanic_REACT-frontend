@@ -1,9 +1,12 @@
 import React, { useState } from "react"
 
-function AddReview({onAddReview, id}){
+function AddReview({onAddReview, id, onUpdateReview}){
   const [comment, setComment] = useState("")
   const [name, setName] = useState("")
   const [rating, setRating] = useState("")
+  const [isEditing, setIsEditing] = useState(false)
+  const [editIndex, setEditIndex] = useState()
+
 
 
   function handleAddReview(e){
@@ -25,13 +28,32 @@ function AddReview({onAddReview, id}){
     .then((resp) => resp.json())
     .then((data) => onAddReview(data))
    
+
+    const updateReview = {
+      comment: comment,
+      rating: rating,
+    }
+
+      fetch(`http://localhost:9292/reviews/${id}`, {
+        method: "PATCH",
+        headers: {
+          "Content-Type":"application/json"
+        },
+        body: JSON.stringify(updateReview)
+      })
+      .then((resp) => resp.json())
+      .then((updatedReview) => onUpdateReview(updatedReview))
+    
   }
+
+  function handleUpdate2(){}
+
 
   return (
     <div>
-      <form className="add-review" form onSubmit={handleAddReview}>
-      <input type="text" className="form-control" placeholder="Name" onChange={(e) => setName(e.target.value)}/>
-      <select className="form-select form-select-sm" onChange={(e) => setRating(e.target.value)}>
+      <form className="add-review" form onSubmit={handleAddReview} >
+      <input type="text" className="form-control" placeholder="Name" onChange={(e) => setName(e.target.value)} required/>
+      <select className="form-select form-select-sm" onChange={(e) => setRating(e.target.value)} required>
           <option>Rating</option>
           <option value="1">1</option>
           <option value="2">2</option>
@@ -39,8 +61,10 @@ function AddReview({onAddReview, id}){
           <option value="4">4</option>
           <option value="5">5</option>
         </select>
-        <textarea type="textArea" className="form-control" rows="3" placeholder="Comment" onChange={(e) => setComment(e.target.value)}></textarea>
-        <button type="submit">Add a Review</button>
+        <textarea type="textArea" className="form-control" rows="3" placeholder="Comment" onChange={(e) => setComment(e.target.value)} required></textarea>
+        
+        { !isEditing ? (<button type="submit" >Add a Review</button>) :
+        (<button type="submit" onClick={handleUpdate2}>Save Review</button>)} 
       </form>
     </div>
   )

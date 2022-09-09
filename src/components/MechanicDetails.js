@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import AddReview from "./addReview";
 import DeleteReview from "./DeleteReview";
-import EditReview from "./EditReview";
 
 
 
@@ -29,7 +28,7 @@ export default function MechanicDetails({ onUpdateReview }){
   // const [time, setTime] = useState("")
 
 
-  // useEffect(() => {
+  useEffect(() => {
     fetch(DISPLAY_MECHANICS)
     .then((resp) => resp.json())
     .then((data) => {
@@ -51,12 +50,13 @@ export default function MechanicDetails({ onUpdateReview }){
       }, 0))
 
         })
-  // }, [review])
+  }, [rating])
 
 
   function handleAddReview(newReview){
-    setRating(...review, newReview)
-    // setRating("")
+    
+    return setRating(...review, newReview)
+      
   }
 
  
@@ -69,14 +69,16 @@ export default function MechanicDetails({ onUpdateReview }){
   }
 
 
-  function handleUpdateReview(newReview){
+  function handleEditReview(i){
     console.log("Trial Update")
-    setIsEditing(true)
-    onUpdateReview(newReview)
+    // setIsEditing(true)
+
+    onUpdateReview(i)
   }
 
-  function handleEditReview(id){
-    setComment(review)
+  function handleEdit(i){
+    setComment(review[i])
+    setIsEditing(true)
   }
 
 
@@ -105,7 +107,7 @@ export default function MechanicDetails({ onUpdateReview }){
           <div className="personal-dets">
             <h5 className="card-title">Reviews</h5>
             <div className="review" key={review.id}>
-              {review.map((review, id) => {
+              {review.map((review, i) => {
                 return (
                     <div className="card-body" >
                       <hr style={{
@@ -124,8 +126,8 @@ export default function MechanicDetails({ onUpdateReview }){
                       
                       <div>
                         
-                        <button  className="button1" onClick={handleUpdateReview} >✏️ Edit</button> 
-                        <button  className="button1" onClick={() => handleEditReview(id)} >✏️ Edit 2</button> 
+                        <button  className="button1" onClick={() => handleEdit(i)} >✏️ Edit</button> 
+                        {/* <button  className="button1" onClick={() => handleUpdateReview(i)} >✏️ Edit 2</button>  */}
 
                        
                         <button className="button2"> <DeleteReview onDeleteReview={handleDeleteReview} id={review.id}/> </button>
@@ -140,7 +142,8 @@ export default function MechanicDetails({ onUpdateReview }){
                 )
               })}
             </div>
-            <AddReview onAddReview={handleAddReview} id={id}/>
+
+            {!isEditing ? (<AddReview onAddReview={handleAddReview} id={id} />) : (<AddReview onUpdateReview={handleEditReview} id={id}/>)}
 
           </div>
         </div>

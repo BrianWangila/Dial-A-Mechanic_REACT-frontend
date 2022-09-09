@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function EditMechanic({ id, onUpdateReview}){
+function EditMechanic({ id}){
   // const [mechDetails, setMechDetails] = useState(body)
   const [comment, setComment] = useState("")
   const [rating, setRating] = useState("")
@@ -21,7 +21,7 @@ function EditMechanic({ id, onUpdateReview}){
       body: JSON.stringify(updateReview)
     })
     .then((resp) => resp.json())
-    .then((updatedReview) => onUpdateReview(updatedReview))
+    .then((updatedReview) => (updatedReview))
     console.log(updateReview)
   }
 
