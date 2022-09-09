@@ -1,9 +1,20 @@
 import React, { useState } from "react"
 
 function AddReview({onAddReview, id}){
+  const [comment, setComment] = useState("")
+  const [name, setName] = useState("")
+  const [rating, setRating] = useState("")
 
 
+  function handleAddReview(e){
+    e.preventDefault()
 
+    const newReview = {
+      mechanic_id: id,
+      name: name,
+      comment: comment,
+      rating: rating
+    }
 
 
  
