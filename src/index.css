@@ -247,13 +247,13 @@
 }
 
 .personal-dets {
-
+  /* width: 40vw; */
 }
 
 .review {
   overflow-y: scroll;
   height: 110vh;
-  width: 90vw;
+  width: 30vw;
 }
 
 .card-body {

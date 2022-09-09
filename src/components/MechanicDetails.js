@@ -97,7 +97,7 @@ export default function MechanicDetails({ onUpdateReview }){
           </div>
           <div className="personal-dets">
             <h5 className="card-title">Reviews</h5>
-            <div className="review" style={{width: 80+"%"}}  key={review.id}>
+            <div className="review" key={review.id}>
               {review.map((review) => {
                 return (
                     <div className="card-body" >
