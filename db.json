@@ -1,0 +1,82 @@
+{
+  "mechanics": [
+    {
+      "id": 1,
+      "category": "Heavy Machinery",
+      "shop_name": "Okush Mechanic Shop",
+      "location": "Nakuru, Kenya",
+      "experience": 6,
+      "rating": 4.5,
+      "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi cursus orci nec malesuada iaculis. Aenean bibendum nunc nisl, vitae mollis turpis gravida eget. Donec bibendum odio elementum, congue leo ac, fermentum leo. Mauris fringilla auctor odio non tempus. Praesent convallis nunc vel congue porta. Sed condimentum erat in orci feugiat, at iaculis erat volutpat. Ut vitae pharetra orci. In massa ligula, sodales nec vestibulum quis, rutrum et leo.",
+      "image_url": "https://media.istockphoto.com/photos/happy-black-auto-mechanic-working-at-car-workshop-and-looking-at-picture-id1289143731?k=20&m=1289143731&s=612x612&w=0&h=12DezHaSI7XrRudm4Exd5aDyidgB0k9-worzo5u8viw=",
+      "name": "Moses Okumu",
+      "phone": "+254723456789",
+      "email": "okumu@info.com"
+    },
+    {
+      "id": 2,
+      "category": "Break and Transmission",
+      "shop_name": "Melvin's Auto Shop",
+      "location": "Nairobi, Kenya",
+      "experience": 7,
+      "rating": 4.2,
+      "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi cursus orci nec malesuada iaculis. Aenean bibendum nunc nisl, vitae mollis turpis gravida eget. Donec bibendum odio elementum, congue leo ac, fermentum leo. Mauris fringilla auctor odio non tempus. Praesent convallis nunc vel congue porta. Sed condimentum erat in orci feugiat, at iaculis erat volutpat. Ut vitae pharetra orci. In massa ligula, sodales nec vestibulum quis, rutrum et leo.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/68/Auto_Mechanic.jpg",
+      "name": "Melvin Mogaka",
+      "phone": "+254734567891",
+      "email": "melvin@info.com"
+    },
+    {
+      "id": 3,
+      "category": "Electrical Wiring",
+      "shop_name": "Stephen Car Electrical",
+      "location": "Eldoret, Kenya",
+      "experience": 3,
+      "rating": 4,
+      "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi cursus orci nec malesuada iaculis. Aenean bibendum nunc nisl, vitae mollis turpis gravida eget. Donec bibendum odio elementum, congue leo ac, fermentum leo. Mauris fringilla auctor odio non tempus. Praesent convallis nunc vel congue porta. Sed condimentum erat in orci feugiat, at iaculis erat volutpat. Ut vitae pharetra orci. In massa ligula, sodales nec vestibulum quis, rutrum et leo.",
+      "image_url": "https://www.floridacareercollege.edu/wp-content/uploads/sites/4/2020/06/3-Reasons-Why-Being-a-Mechanic-Could-Be-An-Amazing-Career-Florida-Career-College.jpeg",
+      "name": "Stephen Kariuki",
+      "phone": "+254756789123",
+      "email": "stephen@info.com"
+    },
+    {
+      "id": 4,
+      "category": "Diesel Engine",
+      "shop_name": "Milly's Spares",
+      "location": "Bungoma, Kenya",
+      "experience": 2.5,
+      "rating": 4.1,
+      "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi cursus orci nec malesuada iaculis. Aenean bibendum nunc nisl, vitae mollis turpis gravida eget. Donec bibendum odio elementum, congue leo ac, fermentum leo. Mauris fringilla auctor odio non tempus. Praesent convallis nunc vel congue porta. Sed condimentum erat in orci feugiat, at iaculis erat volutpat. Ut vitae pharetra orci. In massa ligula, sodales nec vestibulum quis, rutrum et leo.",
+      "image_url": "https://www.bls.gov/ooh/images/3010.jpg",
+      "name": "Mildred Nafula",
+      "phone": "+254745678912",
+      "email": "mildred@info.com"
+    },
+    {
+      "image_url": "https://ded7t1cra1lh5.cloudfront.net/media/444425/8c4725e9f774107d6eabac5027d596415e8980b9/original/Service2.jpg?1548177569",
+      "category": "Break and Transmission",
+      "shop_name": "Ravvy Car Clinic",
+      "number": "724941205",
+      "name": "Brian Wangila",
+      "email": "brian@gmail.coo",
+      "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi cursus orci nec malesuada iaculis. Aenean bibendum nunc nisl, vitae mollis turpis gravida eget. Donec bibendum odio elementum, congue leo ac, fermentum leo. Mauris fringilla auctor odio non tempus. Praesent convallis nunc vel congue porta. Sed condimentum erat in orci feugiat, at iaculis erat volutpat. Ut vitae pharetra orci. In massa ligula, sodales nec vestibulum quis, rutrum et leo.",
+      "experience": "4",
+      "location": "Thika Road, Nairobi",
+      "rating": "",
+      "id": 5
+    },
+    {
+      "image_url": "https://ded7t1cra1lh5.cloudfront.net/media/444425/8c4725e9f774107d6eabac5027d596415e8980b9/original/Service2.jpg?1548177569",
+      "category": "Heavy Machinery",
+      "shop_name": "Ravvy Car Clinic",
+      "number": "724941205",
+      "name": "Brian Wangila",
+      "email": "brian@gmail.coo",
+      "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi cursus orci nec malesuada iaculis. Aenean bibendum nunc nisl, vitae mollis turpis gravida eget. Donec bibendum odio elementum, congue leo ac, fermentum leo. Mauris fringilla auctor odio non tempus. Praesent convallis nunc vel congue porta. Sed condimentum erat in orci feugiat, at iaculis erat volutpat. Ut vitae pharetra orci. In massa ligula, sodales nec vestibulum quis, rutrum et leo.",
+      "experience": "4",
+      "location": "Thika Road, Nairobi",
+      "rating": "",
+      "id": 6
+    }
+  ]
+}

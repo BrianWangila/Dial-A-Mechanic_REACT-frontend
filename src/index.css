@@ -1,0 +1,225 @@
+
+.center {
+  margin: auto;
+  margin-bottom: 2em;
+}
+
+.flexbox {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  text-align: justify;
+
+}
+
+
+.flexbox img {
+  height: 40vh;
+  width: 50vw;
+  /* margin: 2vw; */
+}
+
+
+.aboutPage {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+
+.aboutPage img {
+  width: 40vw;
+  height: 60vh;
+  padding: 2vw;
+}
+
+
+.navbar img {
+  height: 60vh;
+  width: 80vw;
+}
+
+.button {
+  border: 1px solid rgb(177, 172, 172); 
+  font-size: 10px;
+  background-color: rgb(235, 228, 228);
+  color: grey;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
+.buttonDetails {
+  margin-top: 2vh;
+  padding-left: 4vw;
+  padding-right: 4vw;
+}
+
+.bg-footer {
+  background-color: #020100;
+  color: white;
+  text-decoration: none;
+
+}
+
+.bg-footer .subscribe input {
+  height: 8vh;
+  width: 25vw;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 15px;
+}
+
+.bg-footer button {
+  padding: 1vh 2vw 1vh 2vw;
+}
+
+.header {
+  background-color: #beb8aa;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url("https://www.ramonstireandservice.com/portals/42/Skins/master/img/img-welcome.jpg");
+
+  background-size: contain;
+}
+
+.login {
+  border: 2px solid rgb(201, 196, 196);
+  width: 30vw;
+  padding: 3vw;
+  border-radius: 20px;
+}
+
+.small-nav {
+  background-color: #e0dcdc;
+  border-radius: 10px 10px 0 0;
+  margin-top: 50vh;
+  /* width: 60vw; */
+}
+
+.navbar-title {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  margin: 2vh;
+  /* justify-content: space-between; */
+}
+
+.navbar-title .span {
+  font-size: 8vh;
+  font-family: fantasy;
+  color: rgb(245, 54, 29);
+  font-weight: 900;
+  margin: 3vh;
+  border: 5px solid rgb(71, 69, 77);
+  border-radius: 20px;
+}
+
+.navbar-title span {
+  color: #051752;
+}
+
+.navbar-title img {
+  width: 5vw;
+  height: 7vh;
+}
+
+.navbar-title h5 {
+  color: #051752;
+  font-size: 3vh;
+  font-weight: 500;
+}
+
+.f-span {
+  font-size: 50px;
+  font-family: fantasy;
+  color: #092688;
+  font-weight: 900;
+  border: 3px solid rgb(26, 25, 25);
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.home-title {
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+}
+
+.search {
+  width: 40vw;
+  text-align: center;
+  margin-bottom: 4vh;
+}
+
+.services {
+  border: 1px solid rgb(173, 171, 171);
+  width: 80vw;
+  margin: auto;
+  margin-top: 7vh;
+  margin-bottom: 10vh;
+  padding: 3vw;
+}
+
+.bg-about {
+  border: 1px solid rgb(173, 171, 171);
+  width: 90vw;
+  margin: auto;
+  padding: 2vw;
+  margin-top: 7vh;
+  margin-bottom: 10vh;
+}
+
+.services h2{
+  color: #051752;
+  padding: 10px;
+
+}
+
+.logout {
+  position: absolute;
+  top: 50vh;
+  right: 2vw;
+  background-color: #6C757E;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  color: white;
+  border: none;
+}
+
+.contact, .about, .subscribe {
+  border: 2px solid rgb(26, 24, 24);
+  padding: 3vh;
+  border-radius: 10px;
+}
+
+.flexbox ul {
+  list-style: none;
+
+}
+
+.subscribe {
+  margin-right: 3vw;
+}
+
+.error {
+  color: red;
+}
+
+.create-account {
+  background-color: #051752;
+  border-radius: 10px 0;
+  color: black;
+  
+}
+.badge {
+  margin-bottom: 1vh;
+}
+
+.shop-name {
+  color: red;
+}
+
