@@ -8,13 +8,15 @@ DAM is a single-page website that links motorist with car problems to their desi
 
 # Screenshot images
 
-<img src="./public/assets/images/homepage.png"/>
+<img src="./public/assets/images/homepage.png" />
 
-<img src="./public/assets/images/mechanicspage.png"/>
+<img src="./public/assets/images/reviews.png" />
 
-<img src="./public/assets/images/login.png"/>
+<img src="./public/assets/images/mechanicspage.png" />
 
-<img src="./public/assets/images/fillform.png"/>
+<img src="./public/assets/images/login.png" />
+
+<img src="./public/assets/images/fillform.png" />
 
 
 
