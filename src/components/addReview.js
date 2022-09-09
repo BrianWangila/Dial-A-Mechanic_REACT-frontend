@@ -24,7 +24,6 @@ function AddReview({onAddReview, id}){
     })
     .then((resp) => resp.json())
     .then((data) => onAddReview(data))
-    console.log(newReview)
    
   }
 

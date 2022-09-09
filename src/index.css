@@ -223,3 +223,41 @@
   color: red;
 }
 
+.add-review {
+  width: 60%;
+}
+
+.add-review button {
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(165, 170, 241);
+}
+
+.review .button1, .button2 {
+  border: none;
+  margin-right: 3%;
+  padding-left: 0;
+  background-color: white;
+}
+
+.card-1, .rating-time {
+  display: flex;
+  justify-content: space-around;
+}
+
+.personal-dets {
+
+}
+
+.review {
+  overflow-y: scroll;
+  height: 110vh;
+  width: 90vw;
+}
+
+.card-body {
+  margin-top: 2%;
+  padding: 2% 0 2%;
+}
+
