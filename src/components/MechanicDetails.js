@@ -24,11 +24,12 @@ export default function MechanicDetails({ onUpdateReview }){
   const [rating, setRating] = useState([])
   const [totalRating, setTotalRating] = useState("")
   const [id, setId] = useState("")
+  const [comment, setComment] = useState("")
   const [isEditing, setIsEditing] = useState(false)
   // const [time, setTime] = useState("")
 
 
-  useEffect(() => {
+  // useEffect(() => {
     fetch(DISPLAY_MECHANICS)
     .then((resp) => resp.json())
     .then((data) => {
@@ -50,13 +51,15 @@ export default function MechanicDetails({ onUpdateReview }){
       }, 0))
 
         })
-  }, [rating])
+  // }, [review])
 
 
   function handleAddReview(newReview){
-    setRating(...rating, newReview)
-    console.log(rating)
+    setRating(...review, newReview)
+    // setRating("")
   }
+
+ 
 
 
   function handleDeleteReview(id){
@@ -68,8 +71,12 @@ export default function MechanicDetails({ onUpdateReview }){
 
   function handleUpdateReview(newReview){
     console.log("Trial Update")
-    setIsEditing(false)
+    setIsEditing(true)
     onUpdateReview(newReview)
+  }
+
+  function handleEditReview(id){
+    setComment(review)
   }
 
 
@@ -98,7 +105,7 @@ export default function MechanicDetails({ onUpdateReview }){
           <div className="personal-dets">
             <h5 className="card-title">Reviews</h5>
             <div className="review" key={review.id}>
-              {review.map((review) => {
+              {review.map((review, id) => {
                 return (
                     <div className="card-body" >
                       <hr style={{
@@ -118,6 +125,8 @@ export default function MechanicDetails({ onUpdateReview }){
                       <div>
                         
                         <button  className="button1" onClick={handleUpdateReview} >✏️ Edit</button> 
+                        <button  className="button1" onClick={() => handleEditReview(id)} >✏️ Edit 2</button> 
+
                        
                         <button className="button2"> <DeleteReview onDeleteReview={handleDeleteReview} id={review.id}/> </button>
                       </div>
