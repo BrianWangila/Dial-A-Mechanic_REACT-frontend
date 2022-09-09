@@ -111,6 +111,7 @@ export default function MechanicDetails({ onUpdateReview }){
                       
                       <div>
                         
+                        <button  className="button1" onClick={handleUpdateReview} >✏️ Edit</button> 
                        
                         <button className="button2"> <DeleteReview onDeleteReview={handleDeleteReview} id={review.id}/> </button>
                       </div>
