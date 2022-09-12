@@ -9,7 +9,7 @@ export default function MechanicsCard({id, body, onUpdateMechanic, category, nam
   // const {id, body, onUpdateMechanic} = mechanic
 
   function handleDelete(){
-    fetch(`http://localhost:9292/mechanics/${mechId}`, {
+    fetch(`https://dial-a-mechanic-backend.herokuapp.com/mechanics/${mechId}`, {
       method: "DELETE",
       headers: {"Content-Type":"application/json"}
     })

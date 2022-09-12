@@ -13,7 +13,7 @@ function EditMechanic({ id}){
       rating: rating,
     }
 
-    fetch(`http://localhost:9292/reviews/${id}`, {
+    fetch(`https://dial-a-mechanic-backend.herokuapp.com/mechanics/${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type":"application/json"

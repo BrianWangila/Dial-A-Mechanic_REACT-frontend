@@ -8,7 +8,7 @@ import DeleteReview from "./DeleteReview";
 export default function MechanicDetails({ onUpdateReview }){
 
   let {mechId} = useParams()
-  const DISPLAY_MECHANICS = `http://localhost:9292/mechanics/${mechId}`
+  const DISPLAY_MECHANICS = `https://dial-a-mechanic-backend.herokuapp.com/mechanics/${mechId}`
 
 
   const [image_url, setImage] = useState("")
@@ -110,19 +110,14 @@ export default function MechanicDetails({ onUpdateReview }){
               {review.map((review, i) => {
                 return (
                     <div className="card-body" >
-                      <hr style={{
-                        background: "blue",
-                        height: 0.5+"vh",
-                        color: "yellow",
-                        width: 20+"vw"
-                      }}/>
-                      <h6 className="card-subtitle mb-2" style={{color: "blue"}}>{review.name}'s Review: </h6>
+                      <hr/>
                       <div className="rating-time">
                         <p className="card-text">Rating: <span  style={{color: "red"}}>{review.rating}</span></p>
-                        <div className="vl"></div>
                         <p className="card-text" >Posted at: <span style={{color: "red"}}>{(new Date(review.updated_at).toLocaleTimeString())}</span></p>
                       </div>
-                      <p className="card-text"> <span > </span> {review.comment}</p>
+                      <p className="card-text"> {review.comment}</p>
+                      <h6 className="card-subtitle mb-2" style={{color: "blue"}}> ~ Review <span style={{color: "darkBlue"}}> by {review.name}</span></h6>
+
                       
                       <div>
                         
@@ -132,12 +127,7 @@ export default function MechanicDetails({ onUpdateReview }){
                        
                         <button className="button2"> <DeleteReview onDeleteReview={handleDeleteReview} id={review.id}/> </button>
                       </div>
-                      <hr style={{
-                        background: "blue",
-                        height: 0.5+"vh",
-                        color: "yellow",
-                        width: 20+"vw"
-                      }}/>
+                      <hr />
                     </div>
                 )
               })}

@@ -3,7 +3,7 @@ import React from "react";
 function DeleteReview({ onDeleteReview, id }){
 
   function deleteReview(){
-    fetch(`http://localhost:9292/reviews/${id}`, {
+    fetch(`https://dial-a-mechanic-backend.herokuapp.com/reviews/${id}`, {
       method: "DELETE",
       headers: {"Content-Type":"application/json"}
     })

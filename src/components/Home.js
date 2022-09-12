@@ -3,7 +3,7 @@ import EditMechanic from "./EditReview";
 import MechanicsCard from "./MechanicsCard";
 
 
-const DISPLAY_MECHANICS = "http://localhost:9292/mechanics"
+const DISPLAY_MECHANICS = "https://dial-a-mechanic-backend.herokuapp.com/mechanics"
 
 export default function Home({Logout, user}){
 

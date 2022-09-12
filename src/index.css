@@ -261,3 +261,9 @@
   padding: 2% 0 2%;
 }
 
+.card-body hr {
+  background-color: "blue";
+  height: 0.5+"vh";
+  color: blue;
+  width: 20vw;
+}
