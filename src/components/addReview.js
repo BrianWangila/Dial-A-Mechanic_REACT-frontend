@@ -20,7 +20,7 @@ function AddReview({onAddReview, id, onUpdateReview}){
     }
 
 
-    fetch(`http://localhost:9292/reviews`, {
+    fetch(`https://dial-a-mechanic-backend.herokuapp.com/reviews`, {
       method: "POST",
       headers: {"Content-Type":"application/json"},
       body: JSON.stringify(newReview)
@@ -34,7 +34,7 @@ function AddReview({onAddReview, id, onUpdateReview}){
       rating: rating,
     }
 
-      fetch(`http://localhost:9292/reviews/${id}`, {
+      fetch(`https://dial-a-mechanic-backend.herokuapp.com/reviews/${id}`, {
         method: "PATCH",
         headers: {
           "Content-Type":"application/json"
@@ -45,8 +45,6 @@ function AddReview({onAddReview, id, onUpdateReview}){
       .then((updatedReview) => onUpdateReview(updatedReview))
     
   }
-
-  function handleUpdate2(){}
 
 
   return (
