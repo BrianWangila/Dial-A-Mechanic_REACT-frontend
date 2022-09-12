@@ -50,7 +50,7 @@ export default function MechanicDetails({ onUpdateReview }){
       }, 0))
 
         })
-  }, [rating])
+  }, [review])
 
 
   function handleAddReview(newReview){

@@ -3,10 +3,8 @@ import { Link } from "react-router-dom";
 
 
 
-export default function MechanicsCard({id, body, onUpdateMechanic, category, name, image_url, mechanic_name, shop_name, location, comment, rating, experience, mechId, onHandleDelete}){
+export default function MechanicsCard({ onUpdateMechanic, category, image_url, mechanic_name, shop_name, location, rating, experience, mechId, onHandleDelete}){
 
-  const [isEditing, setIsEditing] = useState(false)
-  // const {id, body, onUpdateMechanic} = mechanic
 
   function handleDelete(){
     fetch(`https://dial-a-mechanic-backend.herokuapp.com/mechanics/${mechId}`, {
@@ -18,7 +16,6 @@ export default function MechanicsCard({id, body, onUpdateMechanic, category, nam
   }
 
   function handleUpdateMechanic(updatedMechanic){
-    setIsEditing(false);
     onUpdateMechanic(updatedMechanic)
   }
 

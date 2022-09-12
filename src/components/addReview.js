@@ -5,7 +5,7 @@ function AddReview({onAddReview, id, onUpdateReview}){
   const [name, setName] = useState("")
   const [rating, setRating] = useState("")
   const [isEditing, setIsEditing] = useState(false)
-  const [editIndex, setEditIndex] = useState()
+  // const [editIndex, setEditIndex] = useState()
 
 
 

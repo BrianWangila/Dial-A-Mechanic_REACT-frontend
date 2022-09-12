@@ -1,13 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Navbar(){
 
   return(
     <>
       <div className="navbar-title">
-          <div className="span">D{/* <img src="../logo.jpg"/> */}<span>A</span>M</div> 
+          <div className="span">D<span>A</span>M</div> 
           <h5>Dial A Mechanic</h5>
       </div>
     <nav className="navbar header">

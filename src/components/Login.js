@@ -13,7 +13,6 @@ export default function Login({onLogin, error}){
 
   function handleSubmit(e){
     e.preventDefault()
-    // e.target.reset();
 
     onLogin(details)
 
@@ -27,7 +26,6 @@ export default function Login({onLogin, error}){
     </div>
     <form className="login" onSubmit={handleSubmit}>
       <div className="mb-6">
-        {/* display our error message here */}
         {(error !== "") ? (<div className="error">{error}</div>) : ""}
 
         <label className="form-label">First and Last Name</label>
@@ -63,7 +61,6 @@ export default function Login({onLogin, error}){
           onChange={(e) => setDetails({...details, password: e.target.value})}/>
       </div>
  
-      {/* <Link to="/mechanic/create-account"><button type="submit" className="btn btn-primary">Logins</button></Link> */}
       <button type="submit" className="btn btn-primary">Login</button>
     </form>
     </center>
