@@ -31,8 +31,8 @@ DAM is a single-page website that links motorist with car problems to their desi
 # Getting Started with DIAL A MECHANIC (with REACT)
 
 ## Live Link
-- Click [Here](https://brianwangila.github.io/Dial-A-Mechanic/) to access the live link.
-- OR us [this link](https://dry-chamber-57688.herokuapp.com/) to access the website
+- Click [Here](https://sea-lion-app-xkrg8.ondigitalocean.app/) to access the live link.
+- OR us [this link](https://sea-lion-app-xkrg8.ondigitalocean.app/) to access the website
 
 ## Dial A Mechanic API Repo
 
