@@ -62,7 +62,7 @@ function AddReview({onAddReview, id, onUpdateReview}){
         <textarea type="textArea" className="form-control" rows="3" placeholder="Comment" onChange={(e) => setComment(e.target.value)} required></textarea>
         
         { !isEditing ? (<button type="submit" >Add a Review</button>) :
-        (<button type="submit" onClick={handleUpdate2}>Save Review</button>)} 
+        (<button type="submit">Save Review</button>)} 
       </form>
     </div>
   )

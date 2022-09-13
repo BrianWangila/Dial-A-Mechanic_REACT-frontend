@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 
@@ -15,9 +15,9 @@ export default function MechanicsCard({ onUpdateMechanic, category, image_url, m
     .then(() => onHandleDelete(mechId))
   }
 
-  function handleUpdateMechanic(updatedMechanic){
-    onUpdateMechanic(updatedMechanic)
-  }
+  // function handleUpdateMechanic(updatedMechanic){
+  //   onUpdateMechanic(updatedMechanic)
+  // }
 
 
   return(

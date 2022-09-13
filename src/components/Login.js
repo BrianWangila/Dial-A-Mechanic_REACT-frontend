@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 
 
 export default function Login({onLogin, error}){
@@ -21,7 +20,7 @@ export default function Login({onLogin, error}){
 
   return(
     <center style={{paddingBottom: 10+"vh"}}>
-    <div style={{paddingTop: 7+"vh" , paddingTop: 8+"vh", paddingBottom: 10+"vh"}}>
+    <div style={{ paddingTop: 8+"vh", paddingBottom: 10+"vh" }}>
       <h3>Login to Access the Submission Form</h3>
     </div>
     <form className="login" onSubmit={handleSubmit}>

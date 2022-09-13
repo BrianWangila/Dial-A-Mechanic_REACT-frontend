@@ -50,7 +50,7 @@ export default function ContactUs (){
         <div className="card-body">
           <blockquote className="blockquote mb-0">
             <p>Telephone number</p>
-            <footer className="blockquote-footer"><a tel="222-333-444" title="tel">222-333-4444</a></footer>
+            <footer className="blockquote-footer"><a href="/" tel="222-333-444" title="tel">222-333-4444</a></footer>
           </blockquote>
         </div>
       </div>

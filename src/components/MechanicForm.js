@@ -1,13 +1,11 @@
-import { toBeChecked } from "@testing-library/jest-dom/dist/matchers";
 import React, {useState} from "react";
-import { Link } from "react-router-dom";
 import Login from "./Login";
 
 
 
 const POST_DATA = "https://dial-a-mechanic-backend.herokuapp.com/mechanics"
 
-export default function MechanicForm({onHandleAddSubmit, onFillForm}){
+export default function MechanicForm({onHandleAddSubmit}){
 
   const [image_url, setImage] = useState("")
   const [category, setCategory] = useState("Heavy Machinery")
@@ -19,16 +17,15 @@ export default function MechanicForm({onHandleAddSubmit, onFillForm}){
   const [experience, setExperience] = useState("")
   const [rating, setRating] = useState("")
   const [location, setLocation] = useState("")
-  const [error, setError] = useState("")
   const [user, setUser] = useState({
     name: "",
     email: ""
   })
 
-  const adminUser = {
-    email: "admin@gmail.com",
-    password: "admin123"
-  }
+  // const adminUser = {
+  //   email: "admin@gmail.com",
+  //   password: "admin123"
+  // }
 
   const Logins = (details) => {
     console.log(details)
@@ -166,7 +163,7 @@ export default function MechanicForm({onHandleAddSubmit, onFillForm}){
       </>
 
       ) : (
-         <Login onLogin={Logins} error={error} />
+         <Login onLogin={Logins}  />
       )}
    
    

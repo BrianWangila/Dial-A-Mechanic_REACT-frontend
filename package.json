@@ -1,7 +1,7 @@
 {
   "name": "dial-a-mechanic",
   "version": "0.1.0",
-  "homepage": "https://brianwangila.github.io/Dial-A-Mechanic",
+  "homepage": "https://brianwangila.github.io/Dial-A-Mechanic_REACT-frontend",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.2",
@@ -19,12 +19,13 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "server": "json-server --watch db.json --port=2000"
   },
   "eslintConfig": {

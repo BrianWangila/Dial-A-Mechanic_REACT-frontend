@@ -23,7 +23,6 @@ export default function MechanicDetails({ onUpdateReview }){
   const [rating, setRating] = useState([])
   const [totalRating, setTotalRating] = useState("")
   const [id, setId] = useState("")
-  const [comment, setComment] = useState("")
   const [isEditing, setIsEditing] = useState(false)
   // const [time, setTime] = useState("")
 
@@ -77,7 +76,7 @@ export default function MechanicDetails({ onUpdateReview }){
   }
 
   function handleEdit(i){
-    setComment(review[i])
+    // setComment(review[i])
     setIsEditing(true)
   }
 
