@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Dial-A-Mechanic_REACT-frontend/static/css/main.e17bf187.css",
+    "main.js": "/Dial-A-Mechanic_REACT-frontend/static/js/main.cf7db7c7.js",
+    "index.html": "/Dial-A-Mechanic_REACT-frontend/index.html",
+    "main.e17bf187.css.map": "/Dial-A-Mechanic_REACT-frontend/static/css/main.e17bf187.css.map",
+    "main.cf7db7c7.js.map": "/Dial-A-Mechanic_REACT-frontend/static/js/main.cf7db7c7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e17bf187.css",
+    "static/js/main.cf7db7c7.js"
+  ]
+}
